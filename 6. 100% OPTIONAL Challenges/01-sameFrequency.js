@@ -5,6 +5,7 @@
 // Your solution MUST have the following complexities:
 // Time: O(N)
 
+// Frequency counter pattern
 function sameFrequency(num1, num2) {
   let num1Str = num1 + '';
   let num2Str = num2 + '';

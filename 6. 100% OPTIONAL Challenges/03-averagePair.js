@@ -11,6 +11,7 @@
 //      averagePair([-1,0,3,4,5,6], 4.1); // false
 //      averagePair([], 4); // false
 
+// Multiple pointers pattern
 function averagePair(arr, num) {
   if (arr.length === 0) return false;
 
