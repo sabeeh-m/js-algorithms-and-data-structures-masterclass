@@ -14,6 +14,7 @@
 // Time Complexity - O(N)
 // Space Complexity - O(1)
 
+// Sliding Window pattern
 function maxSubarraySum(arr, length) {
   if (length > arr.length) {
     return null;
