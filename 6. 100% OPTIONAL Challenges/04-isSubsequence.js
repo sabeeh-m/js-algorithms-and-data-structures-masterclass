@@ -13,6 +13,7 @@
 // Time Complexity - O(N + M)
 // Space Complexity - O(1)
 
+// Multiple pointers pattern
 function isSubsequence(str1, str2) {
   if (str1.length > str2.length) return false;
 
