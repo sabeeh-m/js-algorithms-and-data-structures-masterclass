@@ -26,9 +26,8 @@ function maxSubarraySum(arr, length) {
   }
 
   let maxSum = sum;
-
-  for (let i = length; i < arr.length; i++) {
-    sum = sum - arr[i - length] + arr[i];
+  for (let end = length; end < arr.length; end++) {
+    sum = sum - arr[end - length] + arr[end];
 
     maxSum = Math.max(maxSum, sum);
   }
@@ -42,4 +41,4 @@ function maxSubarraySum(arr, length) {
 // maxSubarraySum([3,-2,7,-4,1,-1,4,-2,1], 2) // 5
 // maxSubarraySum([2,3], 5) // null
 
-console.log(maxSubarraySum([2,3], 5))
+console.log(maxSubarraySum([100,200,300,400], 2))
