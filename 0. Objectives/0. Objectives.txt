@@ -1,0 +1,4 @@
+// OBJECTIVES
+// 1. Define what an algorithm is
+// 2. Devise a plan to solve algorithms
+// 3. Compare and contrast problem solving patterns including frequency counters, two pointer problems and divide and conquer
