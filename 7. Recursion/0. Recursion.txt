@@ -1,0 +1,31 @@
+// What is recursion?
+// A process (a function in our case) that calls itself
+
+// Why do I need to know this?
+// It's EVERYWHERE!
+// 1. JSON.parse / JSON.stringify
+// 2. document.getElementById and DOM traversal algorithms
+// 3. Object traversal
+// 4. Very common with more complex algorithms
+// 5. It's sometimes a cleaner alternative to iteration
+
+// How recursive functions work
+// Invoke the same function with a different input until you reach your base case!
+
+// Base Case
+// The condition when the recursion ends.
+// This is the most important concept to understand!
+
+// Two essential parts of a recursive function!
+// 1. Base Case
+// 2. Different Input
+
+// What about big O?
+// 1. Measuring time complexity is relatively simple.
+// You can measure the time complexity of a recursive function
+// as then number of recursive calls you need to make relative to the input
+
+// 2. Measuring space complexity is a bit more challenging.
+// You can measure the space complexity of a recursive function
+// as the maximum number of functions on the call stack at a given time,
+// since the call stack requires memory.
