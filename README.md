@@ -56,6 +56,5 @@ They are collections of values, relationship among them, and operations that can
 ### References
 - JavaScript Algorithms and Data Structure Masterclass by Colt Steele (Udemy)
 - Cracking the Coding Interview (Gayle Laakmann)
-- http://blog.benoitvallon.com/data-structures-in-javascript/data-structures-in-javascrip/
 - https://medium.com/@yanganif/tackling-javascript-algorithms-66f1ac9770dc
 - https://github.com/benoitvallon/computer-science-in-javascript/tree/master/data-structures-in-javascript
