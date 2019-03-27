@@ -17,6 +17,9 @@ function someRecursive(arr, callback) {
   return someRecursive(arr.slice(1), callback);
 }
 
+// Time Complexity: O(N^2)
+// Space Complexity: O(N)
+
 const isOdd = val => val % 2 !== 0;
 
 // someRecursive([1,2,3,4], isOdd) // true
