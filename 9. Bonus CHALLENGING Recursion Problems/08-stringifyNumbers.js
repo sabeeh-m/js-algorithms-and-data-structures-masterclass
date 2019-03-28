@@ -41,6 +41,9 @@ function stringifyNumbers(obj) {
   return obj;
 }
 
+// Time Complexity: O(N^2) ?
+// Space Complexity: O(N) ?
+
 // Don't modify an original array
 // function stringifyNumbers(obj) {
 //   let result = {};
@@ -57,10 +60,6 @@ function stringifyNumbers(obj) {
 
 //   return result;
 // }
-
-
-// Time Complexity: O(N^2) ?
-// Space Complexity: O(N) ?
 
 let obj = {
     num: 1,
