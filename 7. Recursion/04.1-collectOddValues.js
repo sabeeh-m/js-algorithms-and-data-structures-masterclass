@@ -1,18 +1,20 @@
 // Collect all of the odd values in an array
 
-function collectOddValues(arr){
+function collectOddValues(arr) {
   let result = []
 
-  function helper(helperInput){
+  // Complexity introduced by recursive nature: O(N)
+  // Complexity introduced by function: O(N)
+  function helper(helperInput) {
       if(helperInput.length === 0) {
           return;
       }
 
-      if(helperInput[0] % 2 !== 0){
-          result.push(helperInput[0])
+      if(helperInput[0] % 2 !== 0) { // Access - O(1)
+          result.push(helperInput[0]) // push - O(1), Access - O(1)
       }
 
-      helper(helperInput.slice(1))
+      helper(helperInput.slice(1)) // slice - O(N)
   }
 
   helper(arr)
