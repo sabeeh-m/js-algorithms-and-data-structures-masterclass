@@ -7,10 +7,13 @@
 // power(2,2) // 4
 // power(2,4) // 16
 
+// Complexity introduced by recursive nature: O(N)
+// Complexity introduced by function: O(1)
+// Memory allocated by function: O(1)
 function power(base, exp) {
-  if (exp === 0) return 1;
+  if (exp === 0) return 1; // O(1)
 
-  return base * power(base, exp--);
+  return base * power(base, exp--); // O(1)
 }
 
 // Time Complexity: O(N)

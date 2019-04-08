@@ -4,10 +4,13 @@
 // recursiveRange(6) // 21
 // recursiveRange(10) // 55
 
+// Complexity introduced by recursive nature: O(N)
+// Complexity introduced by function: O(1)
+// Memory allocated by function: O(1)
 function recursiveRange(num) {
-  if (num === 0) return 0;
+  if (num === 0) return 0; // O(1)
 
-  return num + recursiveRange(num - 1);
+  return num + recursiveRange(num - 1); // O(1)
 }
 
 // Time Complexity: O(N)

@@ -8,24 +8,18 @@
 // fib(28) // 317811
 // fib(35) // 9227465
 
+// Complexity introduced by recursive nature: O(2^N)
+// Complexity introduced by function: O(1)
+// Memory allocated by function: O(1)
 function fib(num) {
-  if (num <= 0) return 0;
-  if (num <= 2) return 1;
+  if (num <= 0) return 0; // O(1)
+  if (num <= 2) return 1; // O(1)
 
-  return fib(num - 1) + fib(num - 2);
+  return fib(num - 1) + fib(num - 2); // O(1)
 }
-// What about big O?
-// 1. Measuring time complexity is relatively simple.
-// You can measure the time complexity of a recursive function
-// as then number of recursive calls you need to make relative to the input
 
-// 2. Measuring space complexity is a bit more challenging.
-// You can measure the space complexity of a recursive function
-// as the maximum number of functions on the call stack at a given time,
-// since the call stack requires memory.
-
-// Time Complexity: O(N^2)
-// Space Complexity: O(N^2)
+// Time Complexity: O(2^N)
+// Space Complexity: O(2^N)
 
 // fib(4) // 3
 // fib(10) // 55

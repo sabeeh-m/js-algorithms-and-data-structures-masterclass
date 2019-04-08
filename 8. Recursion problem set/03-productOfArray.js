@@ -4,10 +4,13 @@
 // productOfArray([1,2,3]) // 6
 // productOfArray([1,2,3,10]) // 60
 
+// Complexity introduced by recursive nature: O(N)
+// Complexity introduced by function: O(N)
+// Memory allocated by function: O(1)
 function productOfArray(arr) {
-  if (arr.length === 0) return 1;
+  if (arr.length === 0) return 1; // O(1)
 
-  return arr[0] * productOfArray(arr.slice(1));
+  return arr[0] * productOfArray(arr.slice(1)); // O(N) [slice - O(N)]
 }
 
 // Time Complexity: O(N^2)
