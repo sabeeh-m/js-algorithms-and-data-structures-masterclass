@@ -5,16 +5,15 @@ function collectOddValues(arr) {
 
   // Complexity introduced by recursive nature: O(N)
   // Complexity introduced by function: O(N)
+  // Memory allocated by function: O(1)
   function helper(helperInput) {
-      if(helperInput.length === 0) {
-          return;
+      if(helperInput.length === 0) return; // O(1)
+
+      if(helperInput[0] % 2 !== 0) { // O(1) [Access - O(1)]
+          result.push(helperInput[0]) // O(1) [push - O(1), Access - O(1)]
       }
 
-      if(helperInput[0] % 2 !== 0) { // Access - O(1)
-          result.push(helperInput[0]) // push - O(1), Access - O(1)
-      }
-
-      helper(helperInput.slice(1)) // slice - O(N)
+      helper(helperInput.slice(1)) // O(N) [slice - O(N)]
   }
 
   helper(arr)
