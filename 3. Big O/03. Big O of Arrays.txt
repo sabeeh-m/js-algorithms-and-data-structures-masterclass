@@ -3,8 +3,8 @@
 // 2. When you need fast access / insertion and removal (sort of....)
 
 // Big O of Arrays
-// Insertion - It depends....
-// Removal - It depends....
+// Insertion - It depends.... O(1) - if insert to the end, O(N) - in other cases
+// Removal - It depends.... O(1) - if remove from the end, O(N) - in other cases
 // Searching - O(N)
 // Access - O(1)
 
