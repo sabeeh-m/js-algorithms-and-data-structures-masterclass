@@ -8,9 +8,9 @@ function maxSubarraySum(arr, num) {
   }
 
   let maxSum = -Infinity;
-  for (let i = 0; i < arr.length - num + 1; i ++) {
+  for (let i = 0; i < arr.length - num + 1; i ++) { // O(N)
       let tempSum = 0;
-      for (let j = 0; j < num; j++) {
+      for (let j = 0; j < num; j++) { // O(M)
           tempSum += arr[i + j];
       }
 
@@ -22,7 +22,7 @@ function maxSubarraySum(arr, num) {
   return maxSum;
 }
 
-// Time Complexity: O(N^2)
+// Time Complexity: O(N * M)
 // Space Complexity: O(1)
 
 // maxSubarraySum([1,2,5,2,8,1,5],2) // 10

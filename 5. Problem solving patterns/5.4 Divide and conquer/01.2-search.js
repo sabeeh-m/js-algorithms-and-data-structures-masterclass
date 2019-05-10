@@ -12,10 +12,10 @@ function search(array, val) {
       let middle = Math.floor((min + max) / 2);
       let currentElement = array[middle];
 
-      if (array[middle] < val) {
+      if (currentElement < val) {
           min = middle + 1;
       }
-      else if (array[middle] > val) {
+      else if (currentElement > val) {
           max = middle - 1;
       }
       else {

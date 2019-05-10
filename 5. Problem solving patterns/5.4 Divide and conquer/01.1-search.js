@@ -4,7 +4,7 @@
 // If the value is not found, return -1
 
 function search(arr, val){
-  for(let i = 0; i < arr.length; i++){
+  for(let i = 0; i < arr.length; i++){ // O(N)
       if(arr[i] === val){
           return i;
       }

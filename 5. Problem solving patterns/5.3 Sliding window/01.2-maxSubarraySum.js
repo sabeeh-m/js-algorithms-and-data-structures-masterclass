@@ -8,12 +8,12 @@ function maxSubarraySum(arr, num) {
   }
 
   let tempSum = 0;
-  for (let i = 0; i < num; i++){
+  for (let i = 0; i < num; i++){ // O(M)
       tempSum += arr[i];
   }
   let maxSum = tempSum;
 
-  for (let i = num; i < arr.length; i++) {
+  for (let i = num; i < arr.length; i++) { // O(N)
       tempSum = tempSum - arr[i - num] + arr[i];
 
       maxSum = Math.max(maxSum, tempSum);
