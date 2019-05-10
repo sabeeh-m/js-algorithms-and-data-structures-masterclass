@@ -6,9 +6,9 @@
 // that sum to zero or undefined if a pair does not exist.
 
 function sumZero(arr){
-  for(let i = 0; i < arr.length; i++){
-      for(let j = i+1; j < arr.length; j++){
-          if(arr[i] + arr[j] === 0){
+  for(let i = 0; i < arr.length; i++){ // O(N)
+      for(let j = i+1; j < arr.length; j++){ // O(N)
+          if(arr[i] + arr[j] === 0){ // O(1)
               return [arr[i], arr[j]];
           }
       }

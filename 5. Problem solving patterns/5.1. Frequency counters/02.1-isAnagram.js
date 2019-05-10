@@ -8,19 +8,19 @@ function isAnagram(str1, str2){
       return false;
 
   let frequencyCounter1 = {};
-  for(let char of str1){
-      frequencyCounter1[char] = (frequencyCounter1[char] || 0) + 1;
+  for(let char of str1){ // O(N)
+      frequencyCounter1[char] = (frequencyCounter1[char] || 0) + 1; // O(1)
   }
   console.log(frequencyCounter1);
 
   let frequencyCounter2 = {};
-  for(let char of str2){
-      frequencyCounter2[char] = (frequencyCounter2[char] || 0) + 1;
+  for(let char of str2){ // O(N)
+      frequencyCounter2[char] = (frequencyCounter2[char] || 0) + 1; // O(1)
   }
   console.log(frequencyCounter2);
 
-  for(let key in frequencyCounter1){
-      if (frequencyCounter1[key] !== frequencyCounter2[key])
+  for(let key in frequencyCounter1){ // O(N)
+      if (frequencyCounter1[key] !== frequencyCounter2[key]) // O(1)
           return false;
   }
 

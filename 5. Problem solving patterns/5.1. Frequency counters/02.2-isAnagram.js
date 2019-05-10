@@ -8,17 +8,17 @@ function isAnagram(str1, str2){
       return false;
 
   let frequencyCounter1 = {};
-  for(let char of str1){
-      frequencyCounter1[char] = (frequencyCounter1[char] || 0) + 1;
+  for(let char of str1){ // O(N)
+      frequencyCounter1[char] = (frequencyCounter1[char] || 0) + 1; // O(1)
   }
   console.log(frequencyCounter1);
 
-  for(let char of str2){
+  for(let char of str2){ // O(N)
       // Can't find the char or counter is zero - it's not an anagram
-      if (!frequencyCounter1[char]) {
+      if (!frequencyCounter1[char]) { // O(1)
           return false;
       } else {
-          frequencyCounter1[char]--;
+          frequencyCounter1[char]--; // O(1)
       }
   }
 
