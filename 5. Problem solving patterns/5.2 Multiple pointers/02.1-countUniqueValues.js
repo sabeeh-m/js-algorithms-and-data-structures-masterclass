@@ -10,17 +10,20 @@ function countUniqueValues(arr){
   let counter = 1;
 
   let prev = 0;
-  let next = prev + 1;
+  let next = 1;
   while (next < arr.length){
-      while (arr[prev] === arr[next]){
+      while (next < arr.length && arr[prev] === arr[next]){ // skip the same values
           next++;
       }
 
-//         if (next - prev === 1) // Count only items that appeared only once
-          counter++;
 
-      prev = next;
-      next++;
+      if (next < arr.length) {
+//         if (next - prev === 1) // Count only items that appeared only once
+        counter++;
+
+        prev = next;
+        next++;
+      }
   }
 
   return counter;
@@ -34,4 +37,4 @@ function countUniqueValues(arr){
 // countUniqueValues([]) // 0
 // countUniqueValues([-2,-1,-1,0,1]) // 4
 
-console.log(countUniqueValues([-2,-1,-1,0,1]))
+console.log(countUniqueValues([2, 2, 2]))
